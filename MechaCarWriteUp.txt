@@ -1,0 +1,79 @@
+1.Linear regression analysis:
+? Which variables/coefficients
+provided a non-random amount of
+variance to the mpg values in the
+dataset?
+
+Based on the statistic data, the Pr(>|t|) is as follows:
+vehicle length: 2.60e-12
+vehicle weight: 0.0776
+spoiler angle: 0.3069
+ground clearance: 5.21e-08
+AWD: 0.1852
+
+Vehicle length and ground clearance are at 0.001 level and these two variables are statistically unlikely to provide random amounts of variance to the linear regression. 
+
+? Is the slope of the linear model
+considered to be zero? Why or why
+not?
+
+The coefficents for vehicle length is 6.267e+00. The coefficents for ground clearance is 3.546e+00. The slope shoudl not be considered 0. For vehicle weight and spoiler angle, the coefficents are small.The slope of the two factors are considered to be zero.
+
+? Does this linear model predict
+mpg of MechaCar prototypes
+effectively? Why or why not?
+
+
+With the multiple R-squared to be 0.7149 and the adjusted R-squared to be 0.6825. Both two amounts are close to 1. I think this linear model predict mpg of MechaCar prototypes effectively.
+
+
+
+
+
+
+
+2.Suspension Coil Summary:
+Metrics:
+Mean: 1499.5310
+Median: 1499.7465
+variance:76.2346
+Standard deviation:8.7312
+
+
+The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per inch. Does the current manufacturing data meet this design specification? Why or why not?
+As the varaince of the sample data is only 76.2346 and is less than 100 pounds per inch. We can say the current manufacturing data meet the deisign specification.
+
+
+
+
+
+3.Suspension Coil T-Test:
+Determine if the suspension coil’s pound-per-inch results are statistically different from the mean population results of 1,500 pounds per inch:
+Based on the t-test for suspension_coil PSI, we find that p-value is 0.5117. So we can not say coil’s pound-per-inch results are statistically different from the mean population results of 1,500 pounds per inch. And at 95% confident level, the PSI of the population woudl be between 1498.122 to 1500.940.
+
+
+
+
+
+4.Research Design:
+? The metrics you would think
+would be of interest to a consumer,
+as well as why you think they would
+be of interest.
+The customer would probably be interested in costs, fuel efficiency. These would all be key factors when a customer considering purchasing a car. I would do the analysis on the mpg which is a measurement of fuel efficiency.
+
+? The question your study will ask,
+as well as what the null and
+alternative hypothesis would be to
+answer that question, and what
+statistical test could be used to test
+this hypothesis.
+
+I would compare the mpg of two samples, one is from MechaCar prototype vehicle and one is from other comparable vehicles at similar price level on the market. The null hypothesis is if MechaCar mpg is equal to comparable vehicle on the market at similar price level. And I would use two sample t test to verify the hypothesis.
+
+
+? Given your selected statistical
+test, what data should be collected
+for your study.
+
+With the two sample t test, I would need to get a sample of mpg of one comparable vehicles at similar price level and the mpg of MechCar. I would use two sample t test and find the mean of the two samples and p values for the two sample t test to see if the mean is statistically difference. And if mean of mpg of MechCar is more than comparable car with similar price.
